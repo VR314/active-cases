@@ -12,15 +12,11 @@ export default function Overlay(props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <body>
+            <section className="section">
                 <form>
-                    zip: <input type="text" name="zip" value="46032" /> <a href="#" >Get Address</a>
+                    zip: <input type="text" name="zip" defaultValue="46032" /> <a href="#" >Get Address</a>
                 </form>
-            </body>
-
-            <style jsx>{`
-
-`}</style>
+            </section>
         </div>
         
     )
