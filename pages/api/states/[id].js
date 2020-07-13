@@ -182,7 +182,7 @@ module.exports = (req, res) => {
             'positive': rawData.positive,
             'negative': rawData.negative,
             'recovered': rawData.recovered,
-            'active': rawData.positive - rawData.recovered,
+            'active': rawData.positive - rawData.recovered - rawData.death,
             'deaths': rawData.death,
             'newCases': rawData.positiveIncrease,
             'newDeaths': rawData.deathIncrease,
